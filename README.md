@@ -1,54 +1,23 @@
-**Traffic-Light-Simulation-using-Arduino**
+#define RED_LED 5
+#define YELLOW_LED 4
+#define GREEN_LED 2
 
-**Description**
-This project simulates a basic traffic light system using an Arduino board and three LEDs: Red, Yellow, and Green.The LEDs light up in sequence — green, yellow, then red — with realistic timing delays to mimic an actual traffic signal.
+void setup() {
+  pinMode(RED_LED, OUTPUT);
+  pinMode(YELLOW_LED, OUTPUT);
+  pinMode(GREEN_LED, OUTPUT);
+}
 
-**Components Used**
+void loop() {
+  digitalWrite(GREEN_LED, HIGH);
+  delay(5000);
+  digitalWrite(GREEN_LED, LOW);
 
-- ESP-32
-- 1 × Red LED
-- 1 × Yellow LED
-- 1 × Green LED
-- 3 × 220Ω resistors
-- Jumper wires
-- Breadboard
-  
+  digitalWrite(YELLOW_LED, HIGH);
+  delay(2000);
+  digitalWrite(YELLOW_LED, LOW);
 
-**Circuit Connections**
-
-- LED Color	Arduino Pin
-- Red	Pin 5
-- Yellow	Pin 4
-- Green	Pin 2
-(Note: Each LED was connected in series with a 220Ω resistor to prevent burning out the LEDs.
-
-
-**Code Behavior**
-
-Green LED turns ON for 5 seconds (Go 🚗).
-
-Yellow LED turns ON for 2 seconds (Get ready ⚡).
-
-Red LED turns ON for 5 seconds (Stop ✋).
-
-
-**How it Works**
-
-The setup() function sets each LED pin as an output.
-
-The loop() function controls the sequence of lights:
-
-Turns the green LED on, waits, then turns it off.
-
-Immediately turns the yellow LED on, waits, then turns it off.
-
-Immediately turns the red LED on, waits, then turns it off.
-
-
-**How to Run**
-- Connect your Arduino and LEDs according to the diagram above.
-- Upload the provided code using the Arduino IDE.
-- Watch your LEDs simulate a traffic light!
-  
-
-**Circuit Diagram**
+  digitalWrite(RED_LED, HIGH);
+  delay(5000);
+  digitalWrite(RED_LED, LOW);
+}
