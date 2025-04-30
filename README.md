@@ -1,23 +1,40 @@
-#define RED_LED 5
-#define YELLOW_LED 4
-#define GREEN_LED 2
+# LED Traffic Light Simulation
 
-void setup() {
-  pinMode(RED_LED, OUTPUT);
-  pinMode(YELLOW_LED, OUTPUT);
-  pinMode(GREEN_LED, OUTPUT);
-}
+## Description
 
-void loop() {
-  digitalWrite(GREEN_LED, HIGH);
-  delay(5000);
-  digitalWrite(GREEN_LED, LOW);
+This Arduino sketch simulates a basic traffic light using three LEDs: red, yellow, and green. Each LED is connected to a digital pin on the Arduino board. The program controls the LEDs in a timed sequence that represents a real-world traffic signal system.
 
-  digitalWrite(YELLOW_LED, HIGH);
-  delay(2000);
-  digitalWrite(YELLOW_LED, LOW);
+## Hardware Requirements
 
-  digitalWrite(RED_LED, HIGH);
-  delay(5000);
-  digitalWrite(RED_LED, LOW);
-}
+- Arduino Uno (or compatible board)
+- 3 LEDs (Red, Yellow, Green)
+- 3 Resistors (220Ω recommended)
+- Breadboard and jumper wires
+
+## Circuit Connections
+
+| LED Color | Arduino Pin |
+|-----------|-------------|
+| Red       | D5          |
+| Yellow    | D4          |
+| Green     | D2          |
+
+Each LED should be connected in series with a resistor.
+
+## How to Use
+
+1. Connect the LEDs and resistors to the Arduino as shown above.
+2. Upload the provided `.ino` file to the Arduino board.
+3. Power the board. The LEDs will light up in the following cycle:
+   - Green for 5 seconds
+   - Yellow for 2 seconds
+   - Red for 5 seconds
+4. The cycle repeats continuously.
+
+## File
+
+- `sketch_mar30a_led_robot.ino`: Arduino sketch for traffic light simulation
+
+## Author
+
+Joey27-dev
