@@ -21,7 +21,7 @@ This Arduino sketch simulates a basic traffic light using three LEDs: red, yello
 
 Each LED should be connected in series with a resistor.
 
-## How to Use
+## Usage
 
 1. Connect the LEDs and resistors to the Arduino as shown above.
 2. Upload the provided `.ino` file to the Arduino board.
@@ -33,7 +33,7 @@ Each LED should be connected in series with a resistor.
 
 ## File
 
-- `sketch_mar30a_led_robot.ino`: Arduino sketch for traffic light simulation
+- [`sketch_mar30a_led_robot.ino`](sketch_mar30a_led_robot.ino): Main Arduino sketch controlling the LED sequence
 
 ## Author
 
