@@ -37,4 +37,6 @@ Each LED should be connected in series with a resistor.
 
 ## Author
 
-Joey27-dev
+**Joash Austin Pillay**  
+[LinkedIn - Joash Pillay](https://www.linkedin.com/in/joashpillay) • [GitHub: Joey27-dev](https://github.com/Joey27-dev) • [Email: joashaustinpillay27@gmail.com](joashaustinpillay27@gmail.com)
+
